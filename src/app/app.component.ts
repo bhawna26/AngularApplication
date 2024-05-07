@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todoApplication';
+  // message is binded to htmlfile using two curly brackets
   message="hello user";
 }
