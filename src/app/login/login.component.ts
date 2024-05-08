@@ -11,7 +11,12 @@ ngOnInit(): void {
 }
 username='bhawna'
 password='123'
+errorMessage='Invalid Credentials'
+invalidLogin=false
 handleLogin(){
-  console.log(this.username);
+  if(this.username==='bhawna' && this.password==='123'){
+    this.invalidLogin=false;
+  }
+  else this.invalidLogin=true;
 }
 }
