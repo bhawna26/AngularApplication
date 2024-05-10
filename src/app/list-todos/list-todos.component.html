@@ -1,0 +1,25 @@
+<table border="1">
+    <caption>MyTodos     </caption>
+
+        <thead>
+            <tr>
+                <th>
+                    id
+                </th>
+                <th>
+                    description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- loop around the list of todos using ngFor -->
+            <tr *ngFor="let todo of todos">
+                <td>
+                    {{todo.id}}
+                </td>
+                <td>
+                    {{todo.description}}
+                </td> 
+            </tr>
+        </tbody>
+</table>
