@@ -21,7 +21,7 @@ constructor(private router:Router){
 handleLogin(){
   if(this.username==='bhawna' && this.password==='123'){
     this.invalidLogin=false;
-    this.router.navigate(['welcome'])
+    this.router.navigate(['welcome',this.username]);
   }
   else this.invalidLogin=true;
 }
