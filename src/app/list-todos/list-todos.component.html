@@ -1,13 +1,18 @@
-<table border="1">
+<h1>My Todo's</h1>
+<div class="container">
+<table class="todos">
     <caption>MyTodos     </caption>
 
         <thead>
             <tr>
                 <th>
-                    id
+                    Description
                 </th>
                 <th>
-                    description
+                    Target Date
+                </th>
+                <th>
+                    Is Completed?
                 </th>
             </tr>
         </thead>
@@ -15,11 +20,15 @@
             <!-- loop around the list of todos using ngFor -->
             <tr *ngFor="let todo of todos">
                 <td>
-                    {{todo.id}}
+                    {{todo.description}}
                 </td>
                 <td>
-                    {{todo.description}}
+                    {{todo.targetDate | date}}
+                </td> 
+                <td>
+                    {{todo.done}}
                 </td> 
             </tr>
         </tbody>
 </table>
+</div>
